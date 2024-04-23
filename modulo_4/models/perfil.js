@@ -17,7 +17,7 @@ const Perfil = new Schema({
 		type: Number,
 		required: true
 	},
-}, {collection: "perfil"});
+}, {collection: "perfis"});
 	
 
 module.exports = Perfil;

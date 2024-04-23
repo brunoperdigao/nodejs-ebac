@@ -1,8 +1,20 @@
 <link href="/stylesheet/style.css" rel="stylesheet" type="text/css">
 <h1> Seu Perfil </h1>
 <h2> Usuario </h2>
-<p> <%= perfil.nomeDoUsuario %></p>
+<p>
+  <% perfil.map((p) => { %>
+    <%= p.nomeDoUsuario %>
+  <% }) %>
+</p>
 <h2> Nome completo </h2>
-<p> <%= perfil.primeiroNome %> <%= perfil.sobrenome %></p>
+<p>
+  <% perfil.map((p) => { %>
+    <%= p.primeiroNome %> <%= p.sobrenome %>
+  <% }) %>
+</p>
 <h2> Idade </h2>
-<p> <%= perfil.idade %> </p>
+<p>
+  <% perfil.map((p) => { %>
+    <%= p.idade %>
+  <% }) %>
+</p>

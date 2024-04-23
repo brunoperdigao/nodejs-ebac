@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/', (_, res) => {
 	Perfil.find({primeiroNome: "Bruno"}).then((perfil) => {
 		res.render('perfil/index', {
-			perfil: perfil[0],
+			perfil: perfil,
 		});		
 	})
 });
